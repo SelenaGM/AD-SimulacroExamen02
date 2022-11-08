@@ -6,6 +6,7 @@ public class Libro {
     private int numPaginas;
     private Autor autor;
 
+    //lista de alquileres!!
     public Libro() {
     }
 
