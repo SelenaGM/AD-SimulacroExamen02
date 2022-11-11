@@ -19,6 +19,5 @@
         <mapping class="com.ciiep.hibernate.modelos.Alquiler"></mapping>
         <mapping class="com.ciiep.hibernate.modelos.Abonado"></mapping>
         <mapping class="com.ciiep.hibernate.modelos.Libro"></mapping>
-
     </session-factory>
 </hibernate-configuration>
