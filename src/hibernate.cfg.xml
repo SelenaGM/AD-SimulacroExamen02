@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property> <!--RECUERDA METER EN LA LIBRERIAS EL HIBERNATE CORE Y EL MYSQL -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/biblioteca</property> <!-- Esto se cambia!!-->
+        <property name="connection.username">root</property>
+        <property name="connection.password">toor</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="show_sql">true</property>
+
+
+        <!--MAPEO DE LAS CLASES -->
+        <mapping class="com.ciiep.hibernate.modelos.Autor"></mapping>
+        <mapping class="com.ciiep.hibernate.modelos.Alquiler"></mapping>
+        <mapping class="com.ciiep.hibernate.modelos.Abonado"></mapping>
+        <mapping class="com.ciiep.hibernate.modelos.Libro"></mapping>
+
+    </session-factory>
+</hibernate-configuration>
